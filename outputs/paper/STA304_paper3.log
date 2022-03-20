@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.18)  20 MAR 2022 17:24
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.18)  20 MAR 2022 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -907,12 +907,12 @@ Package rerunfilecheck Info: File `STA304_paper3.out' has not changed.
 (rerunfilecheck)             Checksum: DB932A84FC7B4485388A1FD063ED1518;2513.
  ) 
 Here is how much of TeX's memory you used:
- 18224 strings out of 478179
- 339993 string characters out of 5853704
- 797241 words of memory out of 5000000
- 38548 multiletter control sequences out of 15000+600000
- 475792 words of font info for 79 fonts, out of 8000000 for 9000
+ 18233 strings out of 478179
+ 340245 string characters out of 5853704
+ 798241 words of memory out of 5000000
+ 38551 multiletter control sequences out of 15000+600000
+ 475816 words of font info for 82 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,11n,121p,349b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,11n,121p,349b,471s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on STA304_paper3.pdf (16 pages).
