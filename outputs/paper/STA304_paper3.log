@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.18)  20 MAR 2022 17:39
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.18)  20 MAR 2022 19:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -885,17 +885,17 @@ File: STA304_paper3_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (type
 File: /Users/Annie/Desktop/aa.jpg Graphic file (type bmp)
 </Users/Annie/Desktop/aa.jpg>
 
-Overfull \hbox (38.75496pt too wide) in paragraph at lines 591--592
+Overfull \hbox (38.75496pt too wide) in paragraph at lines 596--597
 [][]$[][][][][] [] [] [] [][][][] [] [][][][][][] [] [][][] [] [][][][][] [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 [15]
-Underfull \hbox (badness 1112) in paragraph at lines 648--652
+Underfull \hbox (badness 1112) in paragraph at lines 653--657
 \TU/lmr/m/n/10 Magazine. []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][] [] [][][] [] [][][][] [] [] [][] [][][][][][][] [][] [][][] [][] [][][][][] [][] [][][] [][] [][][][] [][] [][][][][][] [][] [][] [][] [][][][] [][] [][][] [][] [][][][][][][] [][]
  []
 
 
-Underfull \hbox (badness 1629) in paragraph at lines 657--661
+Underfull \hbox (badness 1629) in paragraph at lines 662--666
 \TU/lmr/m/it/10 ers\TU/lmr/m/n/10 . []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][] [] [][][] [][] [][][][][][][][][][] [][] [][] [][] [][][][][][][][][] [][] [][][] [][] [][][][][] [][] [][][][] [][] [][][] [][] [][][][][][][] [][]
  []
 
@@ -909,7 +909,7 @@ Package rerunfilecheck Info: File `STA304_paper3.out' has not changed.
 Here is how much of TeX's memory you used:
  18233 strings out of 478179
  340245 string characters out of 5853704
- 798241 words of memory out of 5000000
+ 798307 words of memory out of 5000000
  38551 multiletter control sequences out of 15000+600000
  475816 words of font info for 82 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191

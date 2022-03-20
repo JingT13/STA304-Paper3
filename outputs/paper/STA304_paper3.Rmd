@@ -1,5 +1,5 @@
 --- 
-title: "Factors Leading to Divorce In Canada"
+title: "Factors Leading to Family Breakdown In Canada"
 author: "Yingxuan Shi, Jingxian Zhai, Wantong Qiu"
 data: "25/03/2022"
 toc: true
@@ -179,7 +179,7 @@ work0 %>% ggplot(aes(x=age, y=num_divorced, colour = Gender)) + geom_line(size=1
 \newpage
 
 ## 5.2 Personal Income
-From the figure4, the X axis shows a range of person income in dollars(per year) and the Y axis shows the number of divorced respondents in 5 years. We can see the personal income between 25000 and 49999 has the most number of divorced respondents (443). With the increase of personal income, the number of divorced respondents decreases sharply. Only 57 respondents who earn over 100,000 dollars per year divorced in 5 years. The number of respondents who earn money between 50,000 dollars to 74,999 dollars doubles the next income range from 75,000 dollars to 99,999 dollars (325 vs 146). 
+From the figure4, the X axis shows a range of person income in dollars(per year) and the Y axis shows the number of divorced respondents in 5 years. We can see the personal income between 25,000 and 49,999 has the most number of divorced respondents (443). With the increase of personal income, the number of divorced respondents decreases sharply. Only 57 respondents who earn over 100,000 dollars per year divorced in 5 years. The number of respondents who earn money between 50,000 dollars to 74,999 dollars doubles the next income range from 75,000 dollars to 99,999 dollars (325 vs 146). 
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE, out.width = "90%", fig.align="center" }
 work1 <- rawdata %>% mutate(money = case_when(
@@ -270,7 +270,7 @@ In the Result section, we find most divorced cases happen when respondents are 2
 
 ## 6.2 Personal Income
 
-As we know, the number of divorced respondents are concentrated in earning between 25,000 dollars to 74,999 dollars from figure4. Jeffrey Dew explains that couples who fight about money once a week have 30% more percent of the possibility of divorce than those who fight about money only a few times a month [@e]. Therefore, when respondents who earn money from 25,000 dollars to 49,999 dollars cannot be satisfied by their partner, they would usually disagree over money to cause the divorce. Income level affects divorces directly [@r]. 
+As we know, the number of divorced respondents are concentrated in earning between 25,000 dollars to 74,999 dollars from figure4. Jeffrey Dew explains that couples who fight about money once a week have 30% more percent of the possibility of divorce than those who fight about money only a few times a month [@e]. Therefore, when respondents who earn money from 25,000 dollars to 49,999 dollars cannot be satisfied by their partner, they would usually disagree over money to cause the divorce. Income level affects divorces directly [@r]. Financial things are the most realistic issue in a family because they are related to where couples live, raising kids, quality of life and so on. Marriage brings financial pressures to individuals. If personal income cannot afford couples’ living and growth of child(ren), conflict and beef between couples generate. At last, marriage moves towards divorce.
 
 ## 6.3 Children
 
