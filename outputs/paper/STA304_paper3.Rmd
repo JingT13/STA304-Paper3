@@ -1,0 +1,303 @@
+--- 
+title: "Factors Leading to Divorce In Canada"
+author: "Yingxuan Shi, Jingxian Zhai, Wantong Qiu"
+data: "25/03/2022"
+toc: true
+output:
+  pdf_document: 
+    latex_engine: xelatex
+  html_document:
+    theme: united 
+    df_print: paged
+abstract: "When talking about family issues, people will think of marriage. Nowadays, marriage occupies half of most people's lives while divorce becomes a serious issue and which is a hard blow for most families. This report will discuss the topic of divorce and explore the various reasons that lead to divorce. According to the data of GSS (General Social Survey) Families Cycle 31, the number of people who have full-time job is much bigger than people who have part-time job. This will cause parents who have full-time job prefering sending their children to before and after peogram, the rate is 73.3%. Also, differences in income range and education level will lead to different number of people who choose to divorce. Overall, we find the main reasons which could lead to divorce are: (1) the level of education; (2) personal income; (3) birth of a newborn or relationship with a child; (4) age and gender."
+bibliography: ref_list.bib
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+library(kableExtra)
+library(janitor)
+library(fmsb)
+library(devtools)
+```
+
+```{r echo=FALSE,warning=FALSE, message=FALSE}
+
+rawdata <- read.csv("/Users/Annie/Desktop/p3data.csv")
+```
+
+\newpage
+# 1 Introduction
+The family we are talking about here is defined as a family of a group of people connected by marriage, descent, or adoption. The family, ideally, provides emotional and psychological security, it also provides valuable social and political functions through the institutionalization of reproduction. And humanitarian activities such as child-rearing and caring for each other, as well as economic provision of food, clothing, shelter, and personal safety, all contribute to order and stability in society as a whole [@bb]. Therefore, in GSS (General Social Survey) Families Cycle 31, we chose the theme of family as the major research direction.
+
+Under the big theme of family, we selected some factors that can cause divorce for further discussion. Because divorce not only means a change in the structure of the family but also affects the extended family such as the family members of both spouses and so on [@cc].Therefore, it is necessary to analyze some data about what will affect people's choice of divorce in the family in GSS (General Social Survey) Families Cycle 31. So that people can also have a more clear and in-depth understanding of divorce is conducive to the establishment of sustainable and stable development of society. The factors of divorce can be studied from three aspects: people's jobs, children, and education level. In the following research, we will base on the data in GSS (General Social Survey) Families Cycle 31 to analyze and explain the influence of the related data of work, children, and education on the data of people who want to divorce in the past five years.
+
+This paper is organized as follows: In the Survey methodology section, we explain that the GSS data was collected over a relatively short period of time through telephone and the participants related to this survey are the residents in 10 different provinces in Canada. Then, we introduce the raw data in the Data section. We select the variables that we will use in the paper and describe them using figures and tables. In the Results section, we find the relationship between age and number of divorced respondents; gender and number of divorced respondents; personal income and number of divorced respondents; childcare and number of divorced respondents; education level and number of divorced respondents. In the Discussion section, we discuss whether our results match the real cases, and then think about limitations and future. At last, we created a new survey which includes 18 questions for further study.
+
+# 2 Survey methodology
+The 2017 General Social Survey (GSS) describes the context and background information. The target population of this survey from February 2 to November 30, 2017 is aged over 15 years old who live in 10 different provinces in Canada. We use a cross-sectional study because this data was collected over a relatively short period of time through telephone. Moreover, these target population includes the residents of the Yukon, Northwest Territories, and Nunavut; full-time residents of institutions.
+
+The aims of this survey are two. One of the purposes is to see how Canadians are doing in terms of both living conditions and social welfare, and the other is to provide people with the newest information on current social or political issues. Around this theme, we have variables about age, job, marital status, etc. In the aspect of sampling, we use strata to describe the ten provinces. Most CMA (Census Metropolitan Areas) could be divided into the individual strata while the non-CMA areas should be divided into other strata. In the end, there are 27 strata in total.
+
+In the framework of the survey, two factors are mainly adopted: the first is the list of telephone numbers from phone companies or the census of population which including mobile and landline phones; the second is the Address Register (AR) in ten provinces.Specifically, The Address Register aims to combine valid addresses and phone numbers together to form a group grouped by address. When there are multiple numbers in a group, the landline number comes first and is defined as the most appropriate number in the group. 86% of the addresses and phone numbers that can be combined are found, and 14% of phone numbers that fail to connect to addresses are also included in the frame.
+
+Every record in the survey frame will be assigned to the stratum of every 10 provinces, and then every stratum will be randomly sampled. The GSS survey frame was conducted through telephone interviews, and households without phones were excluded from the survey. In the survey, 91.8% of the phone numbers were eligible households, where they included at least one person 15 or older. The unqualified households had been stopped in the first set of issues throughout the survey.
+
+In collection part, GSS data are collected directly through the official language via computer-assisted telephone Interviews (CATI), so any other agency interviews are not forbidden. Interviews were conducted Monday through Friday from 9 a.m. to 9 p.m., Saturday from 10 a.m. to 5 p.m., and Sunday from 1 p.m. to 9 p.m. When meeting someone who is not willing to participate in the survey, then will call again twice, explain the survey’s importance, and ask for a suitable time to conduct the interview. Finally, in the 2017 GSS survey, 52.4% participated in interviews.
+
+# 3 Survey
+This survey was created for analyzing what factors largely affect the marriage. There are 18 questions which related to education level, work and children. The options for some of our multiple-choice questions are very detailed such as question 6, 9 and 10. There is a high probability that people will successfully choose the answer they like from the options we give We want to focus on three aspects: education, children, and work. There are some basic questions at the very beginning such as gender or age. The questions left will depend on these three aspects. From this survey we could easily find out the number of people who divorce in every different reason. However, every question has one answer which is “prefer not to say”. If people always choose this answer in “reasons of divorce” questions, this survey will become useless. Also, there will also be some coincidences. For example, the people who divorce just because the marriage stress or other reasons but, in this time, they happened to have child(ren). In this case child(ren) is not the direct reason they choose to divorce. On the other hand, when studying the relationship between education and divorce, we conducted additional surveys on parents' education level, gender types of senior schools, and the kind of public and private schools in order to learn more about the impact of education on divorce. In terms of the question of parents' education level, we can know whether parents' education level will affect children's divorce, but inconvenient answer options are not provided in this question, so as to minimize the possibility that invalid data may also lead to respondents' reluctance to answer.
+
+# 4 Data section
+## 4.1 Data cleaning
+
+To gain a better understanding of the 2017 Canadian General Social Survey (GSS) on families, I utilized the 2017 Canadian GSS on families dataset from CHASS data centre (University of Toronto). The data is collected and provided by statistics Canada under the terms of the Data Liberation Initiative. In this dataset, the raw data includes 461 variables so we cleaned and extracted the important data to start my analysis. In the analysis, we will use R statistical language [@R-base], tidyverse packages [@m], devtools [@vv], dplyr [@l], fmsb[@v], janitor[@z], formattable[@x], kableExtra[@xx]. 
+
+Firstly, we selected all variables that we will use in analysis from the raw data, they are related to the number of divorced people, personal financial situation, child(ren) in family and personal education level. Because of the survey using numbers, such as “1”, “2” and so on, to represent respondents’ answers, we will build new attributions to explain exact values towards each original variable.Therefore, we will have new attribution (gender) includes male and female; age describes the respondents' age from 15 to 75; money describes the respondents’ personal income; work type includes full-time job and part-time job; education level describes personal education level for each respondents. Then, the new dataset contains a lot of NA values that will be deleted because of invalid elements, such as "valid skip", "don't know", "refusal" and "not stated". Lastly, we will filter all respondents who are divorced in 5 years to reduce the invaild observations. 
+
+```{r echo=FALSE,warning=FALSE, message=FALSE}
+rawdata0 <- rawdata %>% mutate(divorced = case_when(rawdata$sep5yr == "1" ~ "Divorced",
+                                        rawdata$sep5yr == "2" ~ "Married"))
+
+rawdata1 <- rawdata %>% mutate(Gender = case_when(rawdata$sex == "1" ~ "Male", rawdata$sex == "2" ~ "Female")) %>% mutate(age = case_when(rawdata$agegr10 == "1" ~ 15,
+                                            rawdata$agegr10 == "2" ~ 25,
+                                            rawdata$agegr10 == "3" ~ 35,
+                                            rawdata$agegr10 == "4" ~ 45,
+                                            rawdata$agegr10 == "5" ~ 55,
+                                            rawdata$agegr10 == "6" ~ 65,
+                                            rawdata$agegr10 == "7" ~ 75)) %>% mutate(num_divorced = case_when(
+                                              age == 15&Gender == "Male" ~ 771,
+                                              age == 15&Gender == "Female" ~ 765,
+                                              age == 25&Gender == "Male" ~ 1312,
+                                              age == 25&Gender == "Female" ~ 1498,
+                                              age == 35&Gender == "Male" ~ 1506,
+                                              age == 35&Gender == "Female" ~ 1689,
+                                              age == 45&Gender == "Male" ~ 1432,
+                                              age == 45&Gender == "Female" ~ 1635,
+                                              age == 55&Gender == "Male" ~ 1872,
+                                              age == 55&Gender == "Female" ~ 2238,
+                                              age == 65&Gender == "Male" ~ 1595,
+                                              age == 65&Gender == "Female" ~ 2017,
+                                              age == 75&Gender == "Male" ~ 911,
+                                              age == 75&Gender == "Female" ~ 1361,
+                                            
+                                            )) 
+
+Job <- rawdata %>% mutate(work_type = case_when(rawdata$rto_101 == "1" ~ "Full time",
+                                               rawdata$rto_101 == "2" ~ "Part time")) %>% na.omit(work_type)
+```
+
+## 4.2 Variables 
+Using ggplot2 [@c] to create two bar charts which explain basic information about age, gender and situation. Also we use fmsb [@v]to create the radar char to describe the different types of child care. From figure 1, we can see the number of divorced respondents takes part in a small percentage in this survey, only 1382 respondents. Therefore, we will analyze these 1382 observations in different ways. Figure 2 shows age and gender information of all observations. We can see the number of female respondents are more than male respondents and age from 55 to 65 contains the most of respondents. 
+
+ 
+To better understand the relationship between the number of respondents and personal income, education level and childcare, I reported the number of divorced or married respondents and the total number in table1, table2 and table3 using kableExtra[(Zhu 2021)[@x]. We used red numbers to emphasize the relationship that we want to analyze. From table1, we can see 6772 respondents earn less than 25000 dollars per year and 6173 respondents who earn money from 25000 dollars to 49999 dollars per year so they occupy the biggest share of all observations.Only 846 respondents earn more than 100000 dollars.From table2, we can see most respondents' highest education level are high school and college (4848 and 4566). The distribution of the number of respondents in each education level is balanced. From table 3, we can see only 38 respondents choose a preschool center and 362 respondents choose a school program, school program is the most popular and preschool center is the least popular. Furthermore, the number of respondents who choose a daycare almost equals the number of respondents who choose a home daycare.In addition, we used ggplot2 to create a bar plot to explain part-time job and full-time job. Obviously, the number of respondents who have full-time job are more than respondents who have part-time job (1537 vs 189). 
+
+
+
+
+```{r echo=FALSE, warning=FALSE, message=FALSE, out.width = "90%", fig.align="center" }
+rawdata0 %>% ggplot(aes(y=divorced, fill=divorced)) + geom_bar(stat="count") + geom_text(stat="count", aes(label=..count..), vjust=2) + theme(legend.position = "bottom", legend.direction = "horizontal", legend.title = element_blank()) + labs(title = "Figure 1: The number of divorced and married respondent", x="The number of people", y= "Divorced or Married")
+```
+\newpage
+```{r  echo=FALSE, warning=FALSE, message=FALSE, out.width = "90%", fig.align="center" }
+rawdata1 %>%  ggplot(aes(x = age, y= num_divorced, fill = Gender)) + geom_bar(stat = "identity", position = "dodge") + theme(legend.position = "bottom", legend.direction = "horizontal", legend.title = element_blank()) + labs(title = "Figure 2: The number of respondent in different age ", x="Age", y="The number of respondent") 
+
+Job %>% ggplot(aes(y=work_type, fill=work_type)) + geom_bar(stat="count") + geom_text(stat="count", aes(label=..count..), vjust=2) + theme(legend.position = "bottom", legend.direction = "horizontal", legend.title = element_blank()) + labs(title = "Figure 3: The number of respondents having full-time or part-time job", x="The number of people",y="Full time or part time")
+```
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+personal_income <- data.frame(
+      row.names = c("Less 25000", "25000 to 49999", "50000 to 74999",  "75000 to 99999", "More 100000"),
+      "Married" = c(6405,5730,3571,1884,789),
+      "Divorced" = c(367,443,325,146,57),
+      "Percentage" = c("94.6(5.4)","92.8(7.2)","91.7(8.3)","92.8(7.2)","93.2(6.8)"),
+      "Total" = c(6772,6173,3896,2030,846))
+personal_income %>% kbl(caption = "The number of respondents and personal income ")  %>% column_spec(3, color = "red") %>% column_spec(2, width = "22em") %>%  kable_styling()  
+
+education_level <- data.frame(
+      row.names = c("Less than high school ", "High school", "Trade certificate",  "College", " University blow the bachelor’s level", "Bachelor’s degree", "Higher than bachelor’s level"),
+      "Married" = c(2930,4519,1341,4188,686,3502,1741),
+      "Divorced" = c(106,329,142,378,46,251,102),
+      "Percentage" = c("96.5(3.5)","93.2(6.8)","90.4(9.6)","91.7(8.3)","93.7(6.3)","93.3(6.7)","94.4(5.6)"),
+      "Total" = c(3036,4848,1483,4566,732,3753,1843))
+education_level %>% kbl(caption = "The number of respondents and personal education level ")  %>% column_spec(3, color = "red") %>% column_spec(2, width = "15em") %>% kable_styling() 
+
+children <- data.frame(
+      row.names = c("In the child's home ", "A home daycare", "A preschool centre",  "A daycare", "School program", "Another type of childcare"),
+      "Married" = c(143,235,36,258,312,119),
+      "Divorced" = c(14,20,2,31,312,17),
+      "Percentage" = c("91.1(8.9)","92.1(7.9)","94.7(5.3)","89.3(10.7)","86.2(13.8)","87.5(12.5)"),
+      "Total" = c(157,255,38,289,362,136))
+
+children %>% kbl(caption = "The number of respondents and types of childcare ")  %>% column_spec(3, color = "red") %>% column_spec(2, width = "20em") %>% kable_styling() 
+
+
+```
+
+\newpage
+
+```{r echo=FALSE} 
+work0 <- rawdata %>% mutate(Gender = case_when(rawdata$sex == "1" ~ "Male", rawdata$sex == "2" ~ "Female")) %>% mutate(age = case_when(rawdata$agegr10 == "1" ~ 15,
+                                            rawdata$agegr10 == "2" ~ 25,
+                                            rawdata$agegr10 == "3" ~ 35,
+                                            rawdata$agegr10 == "4" ~ 45,
+                                            rawdata$agegr10 == "5" ~ 55,
+                                            rawdata$agegr10 == "6" ~ 65,
+                                            rawdata$agegr10 == "7" ~ 75)) %>% mutate(num_divorced = case_when(
+                                              age == 15&Gender == "Male" ~ 38,
+                                              age == 15&Gender == "Female" ~ 55,
+                                              age == 25&Gender == "Male" ~ 171,
+                                              age == 25&Gender == "Female" ~ 237,
+                                              age == 35&Gender == "Male" ~ 150,
+                                              age == 35&Gender == "Female" ~ 195,
+                                              age == 45&Gender == "Male" ~ 120,
+                                              age == 45&Gender == "Female" ~ 135,
+                                              age == 55&Gender == "Male" ~ 82,
+                                              age == 55&Gender == "Female" ~ 95,
+                                              age == 65&Gender == "Male" ~ 49,
+                                              age == 65&Gender == "Female" ~ 32,
+                                              age == 75&Gender == "Male" ~ 15,
+                                              age == 75&Gender == "Female" ~ 8,
+                                            
+                                            )) %>% na.omit(rawdata$age) %>% filter(rawdata$sep5yr == 1) 
+
+```
+
+# 5 Result
+## 5.1 Age and Gender
+
+From the line graph, we can see a blue line which represents male and a red line which represents female respectively. The X axis shows the growth of age and the Y axis shows the number of divorced respondents in 5 years. Generally, the number of divorced females is more than the number of male because most of the red line is above the blue line. After 60 years old, the number of divorced male exceeds the number of females. We can see the center at 25 years old, which means most people choose to divorce when they are 25 years old. With the growth of age, the number of people who separated or divorced decreases steadily. Interestingly, there exists an intersection at 60 years old, and therefore this intersection explains females who separated or divorced are younger than males. 
+
+
+
+```{r echo=FALSE}
+work0 %>% ggplot(aes(x=age, y=num_divorced, colour = Gender)) + geom_line(size=1.5) + labs(title = "figure4: The number of divorced people with growth of female and male's age", x="Age", y="The number of divorced people in 5 years") + theme(legend.position = "bottom", legend.direction = "horizontal", legend.title = element_blank())
+```
+\newpage
+
+## 5.2 Personal Income
+From the figure4, the X axis shows a range of person income in dollars(per year) and the Y axis shows the number of divorced respondents in 5 years. We can see the personal income between 25000 and 49999 has the most number of divorced respondents (443). With the increase of personal income, the number of divorced respondents decreases sharply. Only 57 respondents who earn over 100,000 dollars per year divorced in 5 years. The number of respondents who earn money between 50,000 dollars to 74,999 dollars doubles the next income range from 75,000 dollars to 99,999 dollars (325 vs 146). 
+
+```{r echo=FALSE, warning=FALSE, message=FALSE, out.width = "90%", fig.align="center" }
+work1 <- rawdata %>% mutate(money = case_when(
+                      rawdata$ttlincg2 == "1" ~  "$25000",
+                      rawdata$ttlincg2 == "2" ~  "$25000 to $49999",
+                      rawdata$ttlincg2 == "3" ~  "$50000 to $74999",
+                      rawdata$ttlincg2 == "4" ~  "$75000 to $99999",
+                      rawdata$ttlincg2 == "5" ~  "more than $100000")) %>% na.omit(rawdata$money) 
+work1 <- work1 %>% filter(work1$sep5yr=="1")
+
+work1 %>% ggplot(aes(x=money, fill=money)) + geom_bar(stat ="count") + geom_text(stat="count", aes(label=..count..), vjust=2) + theme_classic() + labs(x = " Personal income", y = "The number of seperated or divorced people in 5 years", title = "figure5: The number of divorced people and personal income") + theme(panel.grid.major.y = element_blank(), legend.position = "off")
+```
+\newpage
+
+## 5.3 Children
+There is an another important member in a family which is the child(ren). We could see that most respondents are having full-time job. Among the people who have full-time job, there are 72.8% (979) respondents choose to send their child(ren) to children care. While among the people who have part-time job, there are about 68.5% (113) respondents choose children care. From this data we could say that people who have full-time job prefer to choose children care. It is obvious that there is a big difference between full-time and part-time jobs. Full-time workers who need to focus on work throughout the day have more reason to send their children to care.
+
+```{r echo=FALSE, warning=FALSE, message=FALSE, out.width = "90%", fig.align="center" }
+barplot3_data0 <- "rto_101,product,export
+  Full-time job,childcare,979,
+  Full-time job,no childcare, 365,
+  Part-time job,childcare,113,
+  Part-time job,no childcare,52
+"
+barplot3_data <- read_csv(barplot3_data0)
+
+barplot4 <- ggplot(aes(y = export, x = rto_101, fill = product), data = barplot3_data) +
+  geom_col() + 
+  theme_bw() +
+  theme(axis.text.x = element_text(hjust = 0.5, vjust = 0.5), legend.position = "bottom", legend.direction = "horizontal", legend.title = element_blank()) + 
+  labs(title = "Figure6: The relationship between job type and arrangement for child(ren)",
+subtitle = "Source: General Social Survey (GSS), Cycle 31, 2017: Family") + labs(x = "job type", y = "number of respondents") 
+barplot4
+```
+\newpage
+
+Then, we will talk about the different types of child care. These data describe the influence of different children care on marriage. This spiderchart below mainly illustrates the impacts on divorce. The types of children care is "in the child's home" (Type1), Home daycare (Type2), Preschool centre or nursery school (Type3), Daycare (Type4), Before or after school program (Type5), Another type of childcare (Type6). From the barplot of relationship between job type and arrangement for child(ren), we could see that the the number of respondents with child(ren) who take the full-time job is much bigger than the number of respondents who take the part-time job.From the spider chart we could easily see the type of "before or after school program" accounts for a large proportion. This program can be used to supervise children's after-school activities, and parents like to use this program to develop children's hobbies or some other skills. This program usually runs a few hours before school starts in the morning or after school in the afternoon.  Sending children to care before and after school misses the opportunity to develop hobbies and grow together with them. Alienation from a relationship with a child is a bad situation for maintaining family relationships, leading to a justifiable divorce. 
+
+
+```{r echo=FALSE, warning=FALSE, message=FALSE, out.width = "90%", fig.align="center" }
+
+radarchart_data <- data.frame(Type1=c(60, 0, 14),
+                 Type2=c(60, 0, 20),
+                 Type3=c(60, 0, 2),
+                 Type4=c(60, 0, 31),
+                 Type5=c(60, 0, 50),
+                 Type6=c(60, 0, 17))
+
+
+radarchart1<-radarchart(radarchart_data,
+           vlcex=0.8,
+           title='Figure7: The impact of different childcare services on marriage',
+           axistype = 1,
+           cglcol = "gray", cglty = 2, cglwd = 0.8,
+           axislabcol = "grey",
+           caxislabels = c(0, 15, 30, 45, 60),
+           pcol=rgb(0.2,0.5,0.5,0.9), pfcol=rgb(0.2,0.5,0.5,0.5), plwd=1) 
+```
+\newpage
+
+## 5.4 Education
+As can be seen from the bar chart, the number of divorces with college degrees is the largest. However, "University certificate but below the bachelor's degree" has the lowest number of divorces. Then we also see that the number of divorces is disproportionately high for those with high school diplomas, college degrees, and Bachelor's degrees respondents.Overall, from high to low education levels, we find an interesting fact that the number of divorces within 5 years was lowest among the three categories of respondents who did not complete university or who graduated below a high school diploma or technical college. Then the number of divorces within 5 years from high school to university or college respondents is the largest. Instead, people with a higher bachelor’s degree suddenly have fewer divorces within 5 years.
+```{r echo=FALSE, warning=FALSE, message=FALSE, out.width = "90%", fig.align="center"  }
+gss <- rawdata %>% 
+  select(sep5yr, 
+         ehg3_01b)
+
+gss2 <- gss %>% mutate(education_level = case_when(
+                      gss$ehg3_01b == "1" ~  "Blow high school",
+                      gss$ehg3_01b == "2" ~  "High school ",
+                      gss$ehg3_01b == "3" ~  "Trade certificate",
+                      gss$ehg3_01b == "4" ~  "College",
+                      gss$ehg3_01b == "5" ~  "University certificate",
+                      gss$ehg3_01b == "6" ~ "Bachelor’s degree(B.A.)",
+                      gss$ehg3_01b == "7" ~ "Above bachelor degree"))%>%na.omit(education_level)%>%filter(sep5yr =="1")
+
+gss2 %>% ggplot(aes(x = education_level, fill = education_level)) + geom_bar(stat = "count") + geom_text(stat = "count", aes(label= ..count..),vjust=2) +theme_classic() + labs(x ="Education Level",y="Divorce", title = "Figure8: How education level influence divorce") + theme(panel.grid.major.y = element_blank(),legend.position = "off") +theme(axis.text.x = element_text(angle = 45, hjust = 0.5,vjust = 0.5))
+```
+
+
+# 6 Discussion
+
+The results describe age, gender, personal income, childcare and education level affects the number of divorced people. Firstly, people, who are in different age groups, have different concepts and thoughts so the age affects the number of divorced respondents directly. Similarly, females and males have different concepts and thoughts in a marriage. Moreover, personal income plays an important role in a marriage because people should think about affording the cost of daily life. If couples have child(ren), more problems occur in their marriages, such as affording the cost of child(ren) and childcare. Therefore, different personal income and types of childcare affect the number of divorced people respectively. In addition, individuals’  education level  is another reason causing the number of divorced people because people who are in different education level have different ways to deal with problems in their marriages.
+
+## 6.1 Age and Gender
+
+In the Result section, we find most divorced cases happen when respondents are 25 years old. In fact, the average age for couples experiencing their first divorce is 30 year old. Sixty percent of divorces happen in age from 25 years old to 39 years old [@w]. Actually, the average age for couples going through their first divorce is decreasing. Younger people get married and then divorces, compared to 2012. Moreover, we find the number of divorced females is more than the number of male. A lawyer gives a reason why women are more likely to file for divorce than men. Currently, women realize true equality of the sexes but men still want them to be housewives [@q].Therefore, more women now are willing to choose divorce when they feel inequality in their marriages.
+
+## 6.2 Personal Income
+
+As we know, the number of divorced respondents are concentrated in earning between 25,000 dollars to 74,999 dollars from figure4. Jeffrey Dew explains that couples who fight about money once a week have 30% more percent of the possibility of divorce than those who fight about money only a few times a month [@e]. Therefore, when respondents who earn money from 25,000 dollars to 49,999 dollars cannot be satisfied by their partner, they would usually disagree over money to cause the divorce. Income level affects divorces directly [@r]. 
+
+## 6.3 Children
+
+In most people's life, marriage occupied the rest of their lives. A happy marriage will be unforgettable especially the birth of the first child. However, some parents don't think so. In other words, the arrival of the new baby will bring negative impacts on the relationship between some couples who were close to each other [@c1]. The arrival of a child as a third party will disrupt the stable relationship between husband and wife. The first thing couples will consider is children's education and support. When there is a new baby in the family, the parents are prone to disagreement on different child-rearing styles. As is known to all, a newborn baby is very difficult to taking care of, parents will confilict over the breaktime[@c1]. So in this aspect, the transition to parenthood will lead to higher marital stress and dissatisfaction. These problems can lead to quarrels or various conflicts between husband and wife so that increase the rate of divorce. Moreover, from Figure5 we coud see the number of people who have full-time jobs is much bigger than the people who have part-time jobs. It is becoming increasingly difficult for parents to stay home and take care of their children on their own as most families now rely on two breadwinners for their livelihoods which will lead to a higher proportion of children being sent to child care [@c2]. However, according to HICHD (National Institute of Child Health and Human Development), we find that the is no difference between the children who were taken care of their mothers and the children who were sent to the child care. Instead, the children who grow under family environemnt have good social and cognitive outcomes [@c3]. From Figure6 we could see that parents who choose to send their children to before or after school program have higher divorce rates.  
+
+
+## 6.4 Education
+
+The influence of education level in divorce:
+In the above data analysis, the influence of education level on divorce was explored. As can be seen from the data on respondents' highest educational background in Figure 8, we can see that the respondents with a bachelor’s degree or higher have the lowest number of divorces. On the contrary, the highest number of divorces were among those who had completed college or vocational school.
+
+The prediction of William Goode that the divorce rate of those with the highest education level is lower than that of those with the lowest education level is relatively correct. Since the late 20th century, when the effect of education on divorce has become more pronounced, the divorce rate among those with higher degrees has risen more slowly than the average [@aa]. Therefore, we can see that the divorce data above bachelor’s degree is very low, which also indicates that as time goes by, education gives us different views on marriage and gives us more imagination and choices. Of course, in this survey, we found that the influence of education on divorce is not only due to education level because divorce is not a factor of one person, but also may be caused by the educational level gap between two people or the education level of both families is different, and some other education-related reasons. It is hoped that the influence of education on divorce can be further analyzed into various factors in the future.
+
+\newpage
+
+# Appendix
+
+## QR code and URL link for the questionnaire 
+
+```{r  echo=FALSE, out.width="50%"}
+knitr::include_graphics("/Users/Annie/Desktop/aa.jpg")
+```
+
+
+https://docs.google.com/forms/d/e/1FAIpQLScEtptXLTn1dv_uZH9B3AGgukoWMFRUgzdnLhwMMe6Hac6Ekw/viewform?usp=sf_link
+
+\newpage
+
+# Reference
+
