@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.18)  20 MAR 2022 21:12
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.18)  20 MAR 2022 21:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -885,17 +885,17 @@ File: STA304_paper3_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (type
 File: /Users/Annie/Desktop/aa.jpg Graphic file (type bmp)
 </Users/Annie/Desktop/aa.jpg>
 
-Overfull \hbox (38.75496pt too wide) in paragraph at lines 590--591
+Overfull \hbox (38.75496pt too wide) in paragraph at lines 617--618
 [][]$[][][][][] [] [] [] [][][][] [] [][][][][][] [] [][][] [] [][][][][] [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 [14]
-Underfull \hbox (badness 1112) in paragraph at lines 647--651
+Underfull \hbox (badness 1112) in paragraph at lines 674--678
 \TU/lmr/m/n/10 Magazine. []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][] [] [][][] [] [][][][] [] [] [][] [][][][][][][] [][] [][][] [][] [][][][][] [][] [][][] [][] [][][][] [][] [][][][][][] [][] [][] [][] [][][][] [][] [][][] [][] [][][][][][][] [][]
  []
 
 
-Underfull \hbox (badness 1629) in paragraph at lines 656--660
+Underfull \hbox (badness 1629) in paragraph at lines 683--687
 \TU/lmr/m/it/10 ers\TU/lmr/m/n/10 . []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][] [] [][][] [][] [][][][][][][][][][] [][] [][] [][] [][][][][][][][][] [][] [][][] [][] [][][][][] [][] [][][][] [][] [][][] [][] [][][][][][][] [][]
  []
 
@@ -904,13 +904,13 @@ Underfull \hbox (badness 1629) in paragraph at lines 656--660
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `STA304_paper3.out' has not changed.
-(rerunfilecheck)             Checksum: 37A25F9A11A7DAD9244C85110AF05DD5;2242.
+(rerunfilecheck)             Checksum: 040119703453362D4E1E98D089BD50B9;2433.
  ) 
 Here is how much of TeX's memory you used:
- 18230 strings out of 478179
- 340207 string characters out of 5853704
- 798229 words of memory out of 5000000
- 38548 multiletter control sequences out of 15000+600000
+ 18231 strings out of 478179
+ 340230 string characters out of 5853704
+ 798279 words of memory out of 5000000
+ 38549 multiletter control sequences out of 15000+600000
  475816 words of font info for 82 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  86i,11n,121p,349b,471s stack positions out of 5000i,500n,10000p,200000b,80000s
