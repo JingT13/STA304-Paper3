@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.18)  20 MAR 2022 20:35
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.18)  20 MAR 2022 21:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -827,92 +827,92 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 87.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./STA304_paper3.toc
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 5.
+(Font)              scaled to size 7.0pt on input line 6.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 5.
+(Font)              scaled to size 5.0pt on input line 6.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 5.
+(Font)              scaled to size 10.00092pt on input line 6.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 5.
+(Font)              scaled to size 7.00064pt on input line 6.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 5.
+(Font)              scaled to size 5.00046pt on input line 6.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 5.
+(Font)              scaled to size 9.99893pt on input line 6.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 5.
+(Font)              scaled to size 6.99925pt on input line 6.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 5.
+(Font)              scaled to size 4.99947pt on input line 6.
 )
 \tf@toc=\write4
 \openout4 = `STA304_paper3.toc'.
 
 [1
 
-] [2] [3] [4]
+] [2] [3]
 File: STA304_paper3_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 <use STA304_paper3_files/figure-latex/unnamed-chunk-3-1.pdf>
-[5]
+[4]
 File: STA304_paper3_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 <use STA304_paper3_files/figure-latex/unnamed-chunk-4-1.pdf>
 File: STA304_paper3_files/figure-latex/unnamed-chunk-4-2.pdf Graphic file (type pdf)
 <use STA304_paper3_files/figure-latex/unnamed-chunk-4-2.pdf>
 
-Overfull \hbox (5.94496pt too wide) in paragraph at lines 332--351
+Overfull \hbox (5.94496pt too wide) in paragraph at lines 326--345
  [][] 
  []
 
 
-Overfull \hbox (12.79495pt too wide) in paragraph at lines 357--374
+Overfull \hbox (12.79495pt too wide) in paragraph at lines 351--368
  [][] 
  []
 
-[6] [7]
+[5] [6]
 File: STA304_paper3_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
 <use STA304_paper3_files/figure-latex/unnamed-chunk-7-1.pdf>
-[8]
+[7]
 File: STA304_paper3_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type pdf)
 <use STA304_paper3_files/figure-latex/unnamed-chunk-8-1.pdf>
-[9]
+[8]
 File: STA304_paper3_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (type pdf)
 <use STA304_paper3_files/figure-latex/unnamed-chunk-9-1.pdf>
-[10]
+[9]
 File: STA304_paper3_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file (type pdf)
 <use STA304_paper3_files/figure-latex/unnamed-chunk-10-1.pdf>
-[11]
+[10]
 File: STA304_paper3_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (type pdf)
 <use STA304_paper3_files/figure-latex/unnamed-chunk-11-1.pdf>
-[12] [13] [14]
+[11] [12] [13]
 File: /Users/Annie/Desktop/aa.jpg Graphic file (type bmp)
 </Users/Annie/Desktop/aa.jpg>
 
-Overfull \hbox (38.75496pt too wide) in paragraph at lines 596--597
+Overfull \hbox (38.75496pt too wide) in paragraph at lines 590--591
 [][]$[][][][][] [] [] [] [][][][] [] [][][][][][] [] [][][] [] [][][][][] [] [] [] [] [] [][][][][][][][][][][][][][][][][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
-[15]
-Underfull \hbox (badness 1112) in paragraph at lines 653--657
+[14]
+Underfull \hbox (badness 1112) in paragraph at lines 647--651
 \TU/lmr/m/n/10 Magazine. []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][] [] [][][] [] [][][][] [] [] [][] [][][][][][][] [][] [][][] [][] [][][][][] [][] [][][] [][] [][][][] [][] [][][][][][] [][] [][] [][] [][][][] [][] [][][] [][] [][][][][][][] [][]
  []
 
 
-Underfull \hbox (badness 1629) in paragraph at lines 662--666
+Underfull \hbox (badness 1629) in paragraph at lines 656--660
 \TU/lmr/m/it/10 ers\TU/lmr/m/n/10 . []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][] [] [][][] [][] [][][][][][][][][][] [][] [][] [][] [][][][][][][][][] [][] [][][] [][] [][][][][] [][] [][][][] [][] [][][] [][] [][][][][][][] [][]
  []
 
-[16] (./STA304_paper3.aux)
+[15] (./STA304_paper3.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `STA304_paper3.out' has not changed.
-(rerunfilecheck)             Checksum: DB932A84FC7B4485388A1FD063ED1518;2513.
+(rerunfilecheck)             Checksum: 37A25F9A11A7DAD9244C85110AF05DD5;2242.
  ) 
 Here is how much of TeX's memory you used:
- 18233 strings out of 478179
- 340245 string characters out of 5853704
- 798307 words of memory out of 5000000
- 38551 multiletter control sequences out of 15000+600000
+ 18230 strings out of 478179
+ 340207 string characters out of 5853704
+ 798229 words of memory out of 5000000
+ 38548 multiletter control sequences out of 15000+600000
  475816 words of font info for 82 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  86i,11n,121p,349b,471s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on STA304_paper3.pdf (16 pages).
+Output written on STA304_paper3.pdf (15 pages).
